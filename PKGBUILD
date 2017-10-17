@@ -2,8 +2,8 @@
 
 _pkgname=psmoveapi
 pkgname=${_pkgname}-git
-pkgver=4.0.1.r14.g1eb4525
-pkgrel=2
+pkgver=4.0.4.r7.ge64a766
+pkgrel=1
 pkgdesc="Playstation Move Motion Controller API"
 arch=(i686 x86_64)
 url="http://thp.io/2010/psmove/"
@@ -15,8 +15,8 @@ source=("${_pkgname}::git+https://github.com/thp/psmoveapi.git"
         'fix-opencv-headers.patch'
         'add-libv4l2-module.patch')
 sha1sums=('SKIP'
-          '4544da4ae2f0220350b9d59f05d1e6c8b5e71b36'
-          'f81b484bced325b076ea550b47f2bb145f709a45')
+          'SKIP'
+          'SKIP')
 
 pkgver() {
   cd "${srcdir}/${_pkgname}"
@@ -40,6 +40,10 @@ prepare() {
     -DPSMOVE_BUILD_EXAMPLES=OFF \
     -DPSMOVE_BUILD_OPENGL_EXAMPLES=OFF \
     -DPSMOVE_BUILD_TESTS=OFF
+
+  mkdir -p build
+  cd build
+  cmake ..
 }
 
 build() {

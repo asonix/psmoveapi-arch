@@ -1,7 +1,7 @@
 pkgbase = psmoveapi-git
 	pkgdesc = Playstation Move Motion Controller API
-	pkgver = 4.0.1.r14.g1eb4525
-	pkgrel = 2
+	pkgver = 4.0.4.r7.ge64a766
+	pkgrel = 1
 	url = http://thp.io/2010/psmove/
 	arch = i686
 	arch = x86_64
