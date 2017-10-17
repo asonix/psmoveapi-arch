@@ -54,6 +54,9 @@ build() {
 package() {
   cd "${srcdir}/${_pkgname}"
   make DESTDIR="$pkgdir" install
+  install -m755 -d "${pkgdir}"/usr/lib/python3.6/site-packages/
+  install -D -m644 _psmove.so "${pkgdir}"/usr/lib/python3.6/site-packages/
+  install -D -m644 psmove.py "${pkgdir}"/usr/lib/python3.6/site-packages/
   install -D -m644 psmove_config.h "${pkgdir}"/usr/include/psmoveapi/
   install -D -m644 COPYING "${pkgdir}"/usr/share/licenses/${pkgname}/LICENSE
 }

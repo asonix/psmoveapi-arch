@@ -21,8 +21,8 @@ pkgbase = psmoveapi-git
 	source = fix-opencv-headers.patch
 	source = add-libv4l2-module.patch
 	sha1sums = SKIP
-	sha1sums = 4544da4ae2f0220350b9d59f05d1e6c8b5e71b36
-	sha1sums = f81b484bced325b076ea550b47f2bb145f709a45
+	sha1sums = SKIP
+	sha1sums = SKIP
 
 pkgname = psmoveapi-git
 
